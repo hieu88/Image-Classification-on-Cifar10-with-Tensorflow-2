@@ -1,6 +1,7 @@
 # Image-Classification-on-Cifar10-with-Tensorflow-2
 <p>This repository summaries some image classification architectures in computer vision that learners should know because most of them are fundamental and important to understand more complex architectures which use them as backbones. These models will be coded by Tensorflow 2 (2.6) via model sub-classing, the training and evaluating processes will be customed manually without high level API Keras.<br>
-The dataset which is used for classification is CIFAR10 (read more about CIFAR10 at here : https://www.cs.toronto.edu/~kriz/cifar.html).<br>
+The dataset which is used for classification is CIFAR10 <br>
+  (read more about CIFAR10 at here : https://www.cs.toronto.edu/~kriz/cifar.html).<br>
 After training and evaluating , loss and accuracy histories will be plotted . A table benchmark will be shown to compare accuracy and number of parameter between these models.
 </p>
 <h3>Benchmark on CIFAR10</h3>
