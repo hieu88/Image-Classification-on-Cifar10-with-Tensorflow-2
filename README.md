@@ -14,22 +14,22 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   <tr>
     <td>VGG11</td>
     <td></td>
-    <td></td>
+    <td>28m</td>
   </tr>
   <tr>
     <td>VGG13</td>
     <td></td>
-    <td></td>
+    <td>28m</td>
   </tr>
   <tr>
     <td>VGG16</td>
     <td></td>
-    <td></td>
+    <td>33m</td>
   </tr>
   <tr>
     <td>VGG19</td>
     <td></td>
-    <td></td>
+    <td>38m</td>
   </tr>
   <tr>
     <td>ResNet18</td>
