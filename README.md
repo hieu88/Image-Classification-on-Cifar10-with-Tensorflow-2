@@ -37,4 +37,24 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
     <td></td>
     <td></td>
   </tr>
+  <tr>
+    <td>ResNet34</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ResNet50</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ResNet101</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ResNet152</td>
+    <td></td>
+    <td></td>
+  </tr>
 </table>
