@@ -24,7 +24,7 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   </tr>
   <tr>
     <td>VGG16</td>
-    <td></td>
+    <td>91.9%</td>
     <td>33m</td>
   </tr>
   <tr>
