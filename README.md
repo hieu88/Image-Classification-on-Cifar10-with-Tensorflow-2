@@ -29,7 +29,7 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   </tr>
   <tr>
     <td>VGG19</td>
-    <td></td>
+    <td>92.16%</td>
     <td>38m</td>
   </tr>
   <tr>
