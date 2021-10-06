@@ -14,12 +14,12 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   </tr>
   <tr>
     <td>VGG11</td>
-    <td></td>
+    <td>89.88%</td>
     <td>28m</td>
   </tr>
   <tr>
     <td>VGG13</td>
-    <td></td>
+    <td>91.8%</td>
     <td>28m</td>
   </tr>
   <tr>
