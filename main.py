@@ -87,12 +87,12 @@ if __name__ == '__main__':
         model = get_model(model_type)
 
         # Get optimizer
-        # num_steps = nums_train / batchsize
-        # learning_rate_fn = optimizers.schedules.PiecewiseConstantDecay(
-        #     [(epochs / 3) * num_steps, (epochs * 2. / 3) * num_steps],
-        #     [learning_rate, learning_rate * 0.1, learning_rate * 0.01]
-        # )
-        optimizer = optimizers.SGD(learning_rate=learning_rate, decay=1e-6, momentum=0.9, nesterov=True)
+        num_steps = nums_train / batchsize
+        learning_rate_fn = optimizers.schedules.PiecewiseConstantDecay(
+            [(epochs / 3) * num_steps, (epochs * 2. / 3) * num_steps],
+            [learning_rate, learning_rate * 0.1, learning_rate * 0.01]
+        )
+        optimizer = optimizers.SGD(learning_rate=learning_rate_fn, decay=1e-6, momentum=0.9, nesterov=True)
 
         # To save hist
         train_loss_hist = []
@@ -102,9 +102,8 @@ if __name__ == '__main__':
         best_acc = 0
 
         for epoch in range(epochs):
-            optimizer.lr = learning_rate*(0.75**(epoch//30))
-            print(
-                "Epoch : {}/{}, Learning Rate : {}".format(epoch + 1, epochs, optimizer._decayed_lr('float32').numpy()))
+            # optimizer.lr = learning_rate*(0.75**(epoch//30))
+            print("Epoch : {}/{}, Learning Rate : {}".format(epoch + 1, epochs, optimizer._decayed_lr('float32').numpy()))
 
             # train
             train_loss, train_correct = train.run(train_dataset, model, optimizer)
@@ -135,3 +134,6 @@ if __name__ == '__main__':
                 np.array(test_loss_hist, dtype=np.float32))
         np.save(os.path.join(output_training_hist_folder, "test_accuracies/" + model_type + ".npy"),
                 np.array(test_acc_hist, dtype=np.float32))
+
+
+
