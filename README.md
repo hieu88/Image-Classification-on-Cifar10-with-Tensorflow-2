@@ -39,12 +39,12 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   </tr>
   <tr>
     <td>ResNet34</td>
-    <td></td>
+    <td>93.02%</td>
     <td></td>
   </tr>
   <tr>
     <td>ResNet50</td>
-    <td></td>
+    <td>93.46%</td>
     <td></td>
   </tr>
   <tr>
