@@ -1,4 +1,4 @@
-from models import vgg
+from models import vgg, resnet
 
 MODEL_TYPE = [
     'vgg11',
@@ -11,6 +11,7 @@ MODEL_TYPE = [
     'resnet101',
     'resnet152'
 ]
+
 
 def get_model(model_type):
     if model_type not in MODEL_TYPE:
@@ -27,3 +28,20 @@ def get_model(model_type):
 
     if model_type == 'vgg19':
         return vgg.VGG19()
+
+    if model_type == 'resnet18':
+        return resnet.ResNet18()
+
+    if model_type == 'resnet34':
+        return resnet.ResNet34()
+
+    if model_type == 'resnet50':
+        return resnet.ResNet50()
+
+    if model_type == 'resnet101':
+        return resnet.ResNet101()
+
+    if model_type == 'resnet152':
+        return resnet.ResNet152()
+
+
