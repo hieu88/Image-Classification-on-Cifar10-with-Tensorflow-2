@@ -35,16 +35,16 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
   <tr>
     <td>ResNet18</td>
     <td>92%</td>
-    <td></td>
+    <td>11m</td>
   </tr>
   <tr>
     <td>ResNet34</td>
     <td>93.02%</td>
-    <td></td>
+    <td>21m</td>
   </tr>
   <tr>
     <td>ResNet50</td>
     <td>93.46%</td>
-    <td></td>
+    <td>29m</td>
   </tr>
 </table>
