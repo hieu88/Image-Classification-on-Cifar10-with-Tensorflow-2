@@ -47,14 +47,4 @@ After training and evaluating , loss and accuracy histories will be plotted . A 
     <td>93.46%</td>
     <td></td>
   </tr>
-  <tr>
-    <td>ResNet101</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>ResNet152</td>
-    <td></td>
-    <td></td>
-  </tr>
 </table>
